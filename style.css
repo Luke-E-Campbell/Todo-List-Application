@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  border: none;
+}
+
+html {
+  background: url(./images/night.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 5rem;
+  font-family: "Gotham", sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+#task-div {
+  display: flex;
+  margin: 1.5rem 5%;
+}
+
+#textBox {
+  margin-right: 10px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  text-indent: 10px;
+  border: none;
+}
+
+#textBox:focus {
+  /* Adjust the text indent when the text box is focused */
+  text-indent: 10px;
+  /* Change this value based on your preference */
+  outline: none;
+}
+
+#addTaskBtn {
+  background-color: #001970;
+  color: white;
+  padding: 10px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+#addTaskBtn:hover {
+  background-color: #013D97;
+}
+
+.deleteBtn {
+  border-radius: 50px;
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  transition: all 0.3s ease 0s;
+}
+
+.deleteBtn:hover {
+  color: rgb(255, 0, 0);
+}
+
+#list {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 5px 5%;
+}
+
+.taskText {
+  flex-grow: 1;
+}
+
+.checkBtn,
+.deleteBtn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+  margin: 5px 10px;
+}
+
+.checkmark {
+  margin-right: 10px;
+  visibility: hidden;
+}
+
+footer {
+  background-color: #009DF0;
+  margin-top: auto;
+}
+
+.awaiting {
+  text-shadow: 0 0 20px rgb(0, 45, 195, 1);
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, .75);
+}
+
+#footer {
+  margin-top: 100px;
+  margin: 15px 5%;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #001970;
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 475px) {
+  h1 {
+    font-size: 3.0rem;
+  }
+
+  #footer {
+    font-size: .7rem;
+  }
+}

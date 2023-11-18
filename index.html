@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!-- Poppins Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap" rel="stylesheet">
+  <!-- Gotham Font -->
+  <link href="https://cdn.jsdelivr.net/npm/gotham-fonts@1.0.3/css/gotham-rounded.min.css" rel="stylesheet">
+  <!-- CSS File -->
+  <link rel="stylesheet" href="./style.css">
+  <title>To-Do List</title>
+</head>
+
+<body>
+
+  <h1 id="title">To-Do List</h1>z
+
+  <form id="taskForm">
+    <div id="task-div">
+      <input type="text" id="textBox" placeholder="Add a new task..." required>
+      <input type="button" id="addTaskBtn" value="Add Task">
+    </div>
+  </form>
+
+  <!-- Display tasks -->
+  <div id="tasksContainer">
+    <ul id="list"></ul>
+    <h2 class="awaiting"><i>Awaiting new tasks...</i></h2>
+  </div>
+
+  <footer>
+    <div id="footer">
+      <p>Made by <a href="https://www.linkedin.com/in/lukecampbellis/">Luke Campbell</a>. All Rights Reserved © 2023</p>
+    </div>
+  </footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
