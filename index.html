@@ -18,24 +18,23 @@
 </head>
 
 <body>
+  <div class="container">
+    <h1 class="title">To-Do List</h1>
+  </div>
 
-  <h1 id="title">To-Do List</h1>
-
-  <form id="taskForm">
-    <div id="task-div">
-      <input type="text" id="textBox" placeholder="Add a new task..." required>
-      <input type="button" id="addTaskBtn" value="Add Task">
-    </div>
-  </form>
+  <div class="container form-div">
+    <input type="text" id="textBox" placeholder="Add a new task..." required>
+    <input type="button" id="addTaskBtn" value="Add Task">
+  </div>
 
   <!-- Display tasks -->
-  <div id="tasksContainer">
-    <ul id="list"></ul>
+  <div id="container">
+    <ul id="taskList"></ul>
     <h2 class="awaiting"><i>Awaiting new tasks...</i></h2>
   </div>
 
   <footer>
-    <div id="footer">
+    <div class="container">
       <p>Made by <a href="https://www.linkedin.com/in/lukecampbellis/">Luke Campbell</a>. All Rights Reserved © 2023</p>
     </div>
   </footer>

@@ -12,7 +12,6 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  font-family: "Poppins", sans-serif;
   color: white;
 }
 
@@ -22,26 +21,33 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 5rem;
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.title {
+  font-size: 3.0rem;
   font-family: "Gotham", sans-serif;
   font-weight: 900;
   text-align: center;
-  padding: 20px 0;
 }
 
-#task-div {
+.form-div {
   display: flex;
-  margin: 1.5rem 5%;
+  justify-content: space-between;
 }
 
 #textBox {
-  margin-right: 10px;
-  width: 100%;
-  padding: 10px;
   border-radius: 50px;
   text-indent: 10px;
+  margin-right: 1rem;
+  padding: 10px;
   border: none;
+  width: 100%;
 }
 
 #textBox:focus {
@@ -94,13 +100,12 @@ li {
   flex-grow: 1;
 }
 
-.checkBtn,
 .deleteBtn {
   background-color: transparent;
   border: none;
   cursor: pointer;
   color: white;
-  margin: 5px 10px;
+  padding: 10px 10px;
 }
 
 .checkmark {
@@ -109,21 +114,18 @@ li {
 }
 
 footer {
+  text-align: center;
   background-color: #009DF0;
   margin-top: auto;
+  font-size: .74rem;
 }
 
 .awaiting {
+  margin-top: 2rem;
   text-shadow: 0 0 20px rgb(0, 45, 195, 1);
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   color: rgba(255, 255, 255, .75);
-}
-
-#footer {
-  margin-top: 100px;
-  margin: 15px 5%;
-  text-align: center;
 }
 
 a {
@@ -132,12 +134,56 @@ a {
   transition: all 0.3s ease 0s;
 }
 
-@media (max-width: 475px) {
-  h1 {
-    font-size: 3.0rem;
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
   }
 
-  #footer {
-    font-size: .7rem;
+  .title {
+    font-size: 5rem;
+  }
+
+  .awaiting {
+    font-size: 1.5rem;
+  }
+
+  footer {
+    font-size: 1rem;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
   }
 }
