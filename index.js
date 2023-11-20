@@ -3,9 +3,6 @@ const addTaskBtn = document.getElementById('addTaskBtn');
 const taskList = document.getElementById('taskList');
 const awaitingMessage = document.querySelector('.awaiting');
 
-const newTask = textBox.value.trim();
-
-
 // Function for clicking on textbox
 addTaskBtn.addEventListener('click', addNewTask);
 
@@ -25,7 +22,7 @@ function addNewTask() {
 
     // Set textbox to empty after hitting add task button
     textBox.value = '';
-    
+
     // Hide the awaiting message when tasks are present
     awaitingMessage.style.display = 'none';
   }
@@ -39,7 +36,16 @@ function addTask(task) {
       <span class="taskText">${task}</span>
       <button class="deleteBtn"><i class="icon fas fa-x"></i></button>
     `;
+// Add the slide-down animation class
+  li.classList.add('slide-down');
+
   taskList.appendChild(li);
+
+  // Trigger reflow to apply the initial styles before adding the 'show' class
+  li.offsetHeight;
+
+  // Add the 'show' class to trigger the animation
+  li.classList.add('show');
 
   const taskText = li.querySelector('.taskText');
   const checkmark = li.querySelector('.checkmark');

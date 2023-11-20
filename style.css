@@ -39,6 +39,7 @@ body {
 .form-div {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
 #textBox {
@@ -93,7 +94,18 @@ li {
   align-items: center;
   padding: 0 10px;
   background-color: rgba(255, 255, 255, 0.1);
-  margin: 5px 5%;
+  margin: 5px 6rem 0 0;
+}
+
+.slide-down {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.slide-down.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .taskText {
@@ -114,9 +126,9 @@ li {
 }
 
 footer {
+
   text-align: center;
   background-color: #009DF0;
-  padding: 1rem;
   margin-top: auto;
   font-size: .74rem;
 }
